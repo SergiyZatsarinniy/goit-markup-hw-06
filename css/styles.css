@@ -459,7 +459,6 @@ body {
 
 .footer-wrap {
   display: flex;
-  align-items: baseline;
 }
 
 .logo-footer {
@@ -551,6 +550,8 @@ body {
 }
 
 .subscribe-button-wrap {
+  margin-left: 24px;
+  margin-top: 39px;
 }
 .subscribe-button {
   display: flex;
