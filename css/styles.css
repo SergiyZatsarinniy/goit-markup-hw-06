@@ -491,6 +491,12 @@ body {
   margin-left: 120px;
 }
 
+.social-list-footer {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
 .social-list-link-footer {
   display: flex;
   justify-content: center;
@@ -544,7 +550,30 @@ body {
   color: var(--subscribe-placeholder-text-color);
 }
 
+.subscribe-button-wrap {
+}
 .subscribe-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  gap: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--third-text-color);
+  background-color: var(--action-color);
+  border-radius: 4px;
+  width: 165px;
+  height: 40px;
+  transition: var(--transition-dur-and-func);
+  border: none;
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: var(--pressed-state-color);
 }
 
 /* MAIN PORTFOLIO */
