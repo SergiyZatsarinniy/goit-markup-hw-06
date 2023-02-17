@@ -12,6 +12,8 @@
   --modal-input-name-color: #8e8f99;
   --modal-form-message-placeholder-text-color: rgba(117, 117, 117, 0.5);
   --modal-form-checkbox-text-color: #757575;
+  --subscribe-form-text-input-color: rgba(255, 255, 255, 0.3);
+  --subscribe-placeholder-text-color: rgba(255, 255, 255, 0.6);
 
   --main-bg-color: #ffffff;
   --hero-bg-color: rgba(46, 47, 66, 0.7);
@@ -29,6 +31,8 @@
   --backdrop-bg-color: rgba(46, 47, 66, 0.4);
   --modal-input-border-color: rgba(33, 33, 33, 0.2);
   --border-checkbox-color: #2e2f42;
+  --subscribe-input-border-color: rgba(255, 255, 255, 0.3);
+  --subscribe-input-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 h1,
@@ -453,6 +457,11 @@ body {
   background-color: var(--border-bg-color);
 }
 
+.footer-wrap {
+  display: flex;
+  align-items: baseline;
+}
+
 .logo-footer {
   color: var(--light-color);
 }
@@ -470,7 +479,7 @@ body {
   margin-right: 0px;
 }
 
-.social-media-title {
+.social-media-text {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -478,10 +487,8 @@ body {
   margin-bottom: 16px;
 }
 
-.footer-wrap {
-  display: flex;
-  align-items: baseline;
-  gap: 120px;
+.social-links-wrap {
+  margin-left: 120px;
 }
 
 .social-list-link-footer {
@@ -498,6 +505,46 @@ body {
 .social-list-link-footer:hover,
 .social-list-link-footer:focus {
   background-color: var(--icon-success);
+}
+
+.subscribe-wrap {
+  margin-left: 80px;
+}
+
+.subscribe-text {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--third-text-color);
+  margin-bottom: 16px;
+}
+
+.subscribe-form-input {
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px 8px 16px;
+  color: var(--subscribe-form-text-input-color);
+  background-color: var(--border-bg-color);
+  border: 1px solid var(--subscribe-input-border-color);
+  filter: var(--subscribe-input-filter);
+  border-radius: 4px;
+  transition: var(--transition-dur-and-func);
+}
+
+.subscribe-form-input:focus {
+  outline: none;
+  border: 1px solid var(--action-color);
+  border-radius: 4px;
+}
+
+.form-input::placeholder {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--subscribe-placeholder-text-color);
+}
+
+.subscribe-button {
 }
 
 /* MAIN PORTFOLIO */
@@ -724,7 +771,7 @@ body {
 .modal-form-input-name {
   display: block;
   margin-bottom: 4px;
-  font-size: 12px;
+  font-size: 18px;
   line-height: calc(16 / 12);
   letter-spacing: 0.04em;
   color: var(--modal-input-name-color);
@@ -733,7 +780,7 @@ body {
 .modal-form-input-desc {
   display: block;
   margin-bottom: 4px;
-  font-size: 12px;
+  font-size: 18px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: var(--modal-input-name-color);
