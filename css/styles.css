@@ -730,8 +730,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 408px;
-  height: 584px;
+  min-width: 408px;
+  min-height: 584px;
   background-color: var(--modal-bg-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -802,7 +802,7 @@ body {
 .modal-form-input-name {
   display: block;
   margin-bottom: 4px;
-  font-size: 18px;
+  font-size: 12px;
   line-height: calc(16 / 12);
   letter-spacing: 0.04em;
   color: var(--modal-input-name-color);
@@ -811,7 +811,7 @@ body {
 .modal-form-input-desc {
   display: block;
   margin-bottom: 4px;
-  font-size: 18px;
+  font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: var(--modal-input-name-color);
@@ -885,12 +885,7 @@ body {
 
 .modal-form-check:checked + .modal-form-check-desc::before {
   background-image: url('../images/checkbox.svg');
-  border: none;
-}
-
-.modal-form-check:focus + .modal-form-check-desc::before {
-  background-image: url('../images/checkbox.svg');
-  border: none;
+  border: transparent;
 }
 
 .privacy-policy-text {
