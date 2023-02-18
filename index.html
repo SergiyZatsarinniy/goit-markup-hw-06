@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- HEADER -->
+    <!----- HEADER ----->
     <header class="border-style">
       <div class="container page-header-container">
         <nav class="page-nav">
@@ -54,7 +54,8 @@
         </address>
       </div>
     </header>
-    <!--MAIN -->
+
+    <!----- HERO ----->
     <main>
       <section class="hero overlay hero-background">
         <div class="hero-content container">
@@ -64,7 +65,7 @@
           </button>
         </div>
       </section>
-
+      <!----- OUR ADVANTAGES ----->
       <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Our Advantages</h2>
@@ -167,7 +168,7 @@
           </ul>
         </div>
       </section>
-      <!--OUR TEAM  -->
+      <!------ OUR TEAM ------>
 
       <section class="section our-team-cards-bg">
         <div class="container">
@@ -406,7 +407,7 @@
         </div>
       </section>
     </main>
-    <!-- FOOTER -->
+    <!----- FOOTER ----->
     <footer class="footer-bg footer-content">
       <div class="container footer-wrap">
         <div>
@@ -452,9 +453,10 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe-wrap">
-          <p class="subscribe-text">Subscribe</p>
-          <form name="subscribe_form">
+
+        <form class="subscribe-form" name="subscribe_form">
+          <div>
+            <p class="subscribe-text">Subscribe</p>
             <label>
               <input
                 class="subscribe-form-input"
@@ -463,18 +465,19 @@
                 placeholder="E-mail"
               />
             </label>
-          </form>
-        </div>
-        <div class="subscribe-button-wrap">
-          <button type="button" class="subscribe-button">
-            <p>Subscribe</p>
-            <svg width="24" height="24">
-              <use href="./images/sprite.svg#paper-airplane-icon"></use>
-            </svg>
-          </button>
-        </div>
+          </div>
+          <div class="subscribe-button-wrap">
+            <button type="submit" class="subscribe-button">
+              <p>Subscribe</p>
+              <svg width="24" height="24">
+                <use href="./images/sprite.svg#paper-airplane-icon"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
+    <!---------MODAL WINDOW  -------->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
