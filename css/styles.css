@@ -488,6 +488,8 @@ body {
 
 .social-links-wrap {
   margin-left: 120px;
+  width: 208px;
+  height: 80px;
 }
 
 .social-list-footer {
@@ -514,6 +516,8 @@ body {
 
 .subscribe-form {
   margin-left: 80px;
+  width: 453px;
+  height: 80px;
 }
 
 .subscribe-text {
