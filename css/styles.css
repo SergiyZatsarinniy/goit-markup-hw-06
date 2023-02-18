@@ -514,7 +514,6 @@ body {
 
 .subscribe-form {
   margin-left: 80px;
-  display: flex;
 }
 
 .subscribe-text {
@@ -550,17 +549,17 @@ body {
   color: var(--subscribe-placeholder-text-color);
 }
 
-.subscribe-button-wrap {
-  margin-left: 24px;
-  padding-top: 40px;
+.subscribe-wrap {
+  display: flex;
 }
 
 .subscribe-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: inherit;
+  margin-left: 24px;
   gap: 16px;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
